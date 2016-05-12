@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -302,12 +302,6 @@
                                     <action selector="threePMSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="mgA-7h-uYC"/>
                                 </connections>
                             </switch>
-                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="CSb-se-KBh">
-                                <rect key="frame" x="60" y="534" width="480" height="66"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Jbo-tb-YBF"/>
-                                </connections>
-                            </adBannerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYd-6j-E2Z">
                                 <rect key="frame" x="20" y="160" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -409,14 +403,12 @@
                             <constraint firstItem="EQs-Sm-5VC" firstAttribute="leading" secondItem="Ygc-Gq-wYQ" secondAttribute="trailing" constant="8" id="ocI-5X-kms"/>
                             <constraint firstItem="0kj-9a-yuH" firstAttribute="top" secondItem="4dm-dp-sje" secondAttribute="bottom" constant="8" id="pLs-Hg-el2"/>
                             <constraint firstItem="kYd-6j-E2Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="qSt-rK-TDU"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CSb-se-KBh" secondAttribute="bottom" id="qUR-05-BHC"/>
                             <constraint firstItem="7Fl-ZP-DrH" firstAttribute="top" secondItem="bVp-rT-QFq" secondAttribute="bottom" constant="18" id="quS-g8-pNN"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Tfb-PI-hdv" secondAttribute="leading" id="s3n-od-tI5"/>
                             <constraint firstItem="022-ZA-JrE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="213" id="t29-z0-MNL"/>
                             <constraint firstItem="YhN-SV-r05" firstAttribute="leading" secondItem="MUd-mH-9p9" secondAttribute="trailing" constant="8" id="tDR-k9-hCc"/>
                             <constraint firstItem="yFF-2L-Qiw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="102" id="u8k-9T-j8U"/>
                             <constraint firstItem="ZWh-tL-RJW" firstAttribute="leading" secondItem="iTu-VM-ACd" secondAttribute="trailing" constant="15" id="uAW-sG-0N5"/>
-                            <constraint firstItem="CSb-se-KBh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uUU-Ry-MIL"/>
                             <constraint firstItem="xRe-KL-pRI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="291" id="ukH-7i-tt9"/>
                             <constraint firstItem="022-ZA-JrE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="102" id="wXv-0c-jPT"/>
                             <constraint firstItem="1D4-sl-n17" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="wa1-7T-PuU"/>
@@ -425,7 +417,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Banner" destination="CSb-se-KBh" id="mYn-mh-gId"/>
                         <outlet property="eightAM" destination="iS2-Wn-KVk" id="fPf-Nh-ATb"/>
                         <outlet property="eightAMs" destination="yFF-2L-Qiw" id="b4Y-eX-OMb"/>
                         <outlet property="eightPM" destination="bVp-rT-QFq" id="bYP-oi-ilO"/>

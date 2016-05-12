@@ -14,8 +14,6 @@
 		442ED9371C46EA3000501266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442ED9351C46EA3000501266 /* LaunchScreen.storyboard */; };
 		442ED9421C46EA3000501266 /* Meal_ReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442ED9411C46EA3000501266 /* Meal_ReminderTests.swift */; };
 		442ED94D1C46EA3000501266 /* Meal_ReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442ED94C1C46EA3000501266 /* Meal_ReminderUITests.swift */; };
-		442ED95B1C47DCD600501266 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442ED95A1C47DCD600501266 /* iAd.framework */; };
-		442ED95D1C4802C600501266 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442ED95C1C4802C600501266 /* AdSupport.framework */; };
 		442ED9611C480A7E00501266 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442ED9601C480A7E00501266 /* PopoverViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +48,6 @@
 		442ED9481C46EA3000501266 /* Meal ReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meal ReminderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		442ED94C1C46EA3000501266 /* Meal_ReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal_ReminderUITests.swift; sourceTree = "<group>"; };
 		442ED94E1C46EA3000501266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		442ED95A1C47DCD600501266 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		442ED95C1C4802C600501266 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		442ED9601C480A7E00501266 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopoverViewController.swift; path = ../PopoverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,8 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				442ED95D1C4802C600501266 /* AdSupport.framework in Frameworks */,
-				442ED95B1C47DCD600501266 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,8 +79,6 @@
 		442ED9201C46EA3000501266 = {
 			isa = PBXGroup;
 			children = (
-				442ED95C1C4802C600501266 /* AdSupport.framework */,
-				442ED95A1C47DCD600501266 /* iAd.framework */,
 				442ED92B1C46EA3000501266 /* Meal Reminder */,
 				442ED9401C46EA3000501266 /* Meal ReminderTests */,
 				442ED94B1C46EA3000501266 /* Meal ReminderUITests */,
@@ -419,7 +411,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Meal Reminder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pajalo88.mealReminder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pajalo88.foodReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -433,7 +425,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Meal Reminder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pajalo88.mealReminder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pajalo88.foodReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

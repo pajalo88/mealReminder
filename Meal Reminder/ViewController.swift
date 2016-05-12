@@ -7,12 +7,10 @@
 //
 
 import UIKit
-import iAd
-import AdSupport
 import Foundation
 
 
-class ViewController: UIViewController, ADBannerViewDelegate, UIPopoverPresentationControllerDelegate {
+class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     
     let date = NSDate()
@@ -86,7 +84,7 @@ class ViewController: UIViewController, ADBannerViewDelegate, UIPopoverPresentat
     
     
 
-    @IBOutlet weak var Banner: ADBannerView!
+  
     
     
     @IBOutlet weak var fiveAM: UILabel!
@@ -142,9 +140,7 @@ class ViewController: UIViewController, ADBannerViewDelegate, UIPopoverPresentat
         
         let timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("getTime"), userInfo: nil, repeats: true)
        
-        self.canDisplayBannerAds = true
-        self.Banner?.delegate = self
-        self.Banner?.hidden = true
+        
         
         print(timer)
         
@@ -165,14 +161,7 @@ class ViewController: UIViewController, ADBannerViewDelegate, UIPopoverPresentat
         return todayAtX!
     }
     
-    func bannerViewDidLoadAd(banner: ADBannerView!) {
-        self.Banner?.hidden = false
-        
-    }
-    
-    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
-        self.Banner?.hidden = true
-    }
+   
     
     func localNotification() {
         
